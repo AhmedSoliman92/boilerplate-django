@@ -4,7 +4,7 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-SECRET_KEY = config("2_ze9@l63)z%@gc&ehmslp+@djwk300$(_7uu-t&d@$uu9af11")
+SECRET_KEY = config("SECRET_KEY")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -13,6 +13,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "core",
 ]
 
 MIDDLEWARE = [
